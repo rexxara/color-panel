@@ -6,6 +6,13 @@ import Popper from '@material-ui/core/Popper';
 import Alert from '@material-ui/lab/Alert';
 import green from './Colors/Green'
 import Gray from './Colors/Gray'
+import SkinA from './Colors/SkinA'
+import SkinB from './Colors/SkinB'
+import BrownHair from './Colors/BrownHair'
+import BlueHair from './Colors/BlueHair'
+import LightBrownHair from './Colors/LightBrownHair'
+import BlueLeggy from './Colors/BlueLeggy'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,7 +34,25 @@ const Colors = [{
 },{
   row:Gray,
   desc:'测试灰色'
-}]
+},{
+  row:SkinA,
+  desc:'默认皮肤A'
+},{
+  row:SkinB,
+  desc:'某教程的皮肤B'
+},{
+  row:BrownHair,
+  desc:'褐色头发'
+},{
+  row:BlueHair,
+  desc:'HK416蓝色头发'
+},{
+  row:LightBrownHair,
+  desc:'某教程的浅褐色头发'
+},{
+  row:BlueLeggy,
+  desc:'蓝色丝袜'
+},]
 const voidKey = { element: undefined, key: '' }
 export default function SpacingGrid() {
   const spacing = 2
