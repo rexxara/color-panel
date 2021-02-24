@@ -1,0 +1,123 @@
+
+$PADDING_COE:0.0375;
+$VW:93.34vw;
+$WRAPPER_COE:0.925;
+$ITEM_CENTER:0.4995;
+.turntableCon{
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  padding-top: 5vw;
+  padding-bottom: 9vw;
+  overflow: hidden;
+  position: relative;
+}
+.turnplate-border-cover {
+  overflow: hidden;
+  width: $VW;
+  height: $VW;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.turnplate-border {
+  width: 100%;
+  height: 100%;
+  padding: 3vw;
+  box-sizing: border-box;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pointer {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  width: 24.5vw;
+  text-align: center;
+  height:27.8vw;
+  color: #FF6D21;
+
+  div {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width:40px;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    p {
+      font-weight: bold;
+      font-size: 5.6vw;
+      line-height: 7.5vw;
+    }
+    .chance{
+      font-size: 3.3vw;
+      line-height: 4.4vw;
+    }
+  }
+}
+
+.turnplate-wrapper {
+  transition: all 0.04s linear;
+  position: relative;
+  border-radius: 50%;
+  padding: $PADDING_COE*$VW;
+
+  .turnplate {
+    width: $WRAPPER_COE*$VW;
+    height: $WRAPPER_COE*$VW;
+  }
+
+  .turnplate-list {
+    position: absolute;
+    left: 3.50025vw;
+    top: 3.50025vw;
+    width: 86.3395vw;
+    height: 86.3395vw;
+    z-index: 1;
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  .turnplate-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    div {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      -webkit-transform-origin: 50% ($ITEM_CENTER*$VW);
+      -ms-transform-origin: 50% ($ITEM_CENTER*$VW);
+      transform-origin: 50% ($ITEM_CENTER*$VW);
+
+      img {
+        width: (9.6vw);
+        margin-top: (7vw);
+      }
+
+      div {
+        font-size: 3.5vw;
+        margin-top: 0vw;
+        color: black;
+      }
+    }
+  }
+}
